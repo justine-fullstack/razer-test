@@ -647,6 +647,11 @@ input {
     .footer-icon{
         padding: 0 5px;
     }
+
+    .view-btn{
+        width: 100%;
+        padding: 13px 0;
+    }
 }
 
 @media screen and (width: 1024px) {
