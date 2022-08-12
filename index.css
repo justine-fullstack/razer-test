@@ -1,0 +1,669 @@
+*{
+    font-family: 'Montserrat';
+}
+
+:root{
+    --green: #00ff01;
+    --grey: #988c8c;
+    --dark-grey: #0f0f0f;
+    --black: #000;
+    --white: #fff;
+
+}
+
+.container{
+    max-width: 1200px !important;
+}
+
+/* header */
+.nav-item a{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--grey);
+    text-decoration: none;
+    padding: 0 30px !important;
+}
+
+.nav-item a:focus, .nav-item a:hover, .mob-menu-list a:hover, .mob-menu-list a:focus{
+    color: var(--green);
+    background: unset;
+}
+
+.dropdown-menu li{
+    padding: 10px 0;
+}
+
+.dropdown-menu.show{
+    top: 40px !important;
+}
+
+.dropdown-menu.show, a.dropdown-item:hover {
+    background: var(--black) ;
+}
+
+.submenu.dropdown-menu.show{
+    margin-top: -49px !important;
+}
+
+.razer-icon{
+    width: 100px;
+}
+
+.bg-dark-grey{
+    background-color: var(--dark-grey);
+}
+
+.buy-btn{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--dark-grey);
+    padding: 15px 45px;
+    border-radius: 25px;
+    border: none;
+    background: var(--green);
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+/* mob menu */
+.mob-menu-list{
+    list-style-type: none;
+    padding-left:unset;
+}
+
+.mob-menu .buy-btn{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.mob-menu-list li a{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--grey);
+    text-decoration: none;
+}
+
+.mob-menu-list li{
+    margin-bottom: 30px;
+}
+
+.offcanvas{
+    background-color: var(--black) !important;
+}
+
+.offcanvas-title, .offcanvas-header .btn-close{
+    font-weight: bold;
+    color: var(--grey) !important;
+}
+
+.mob-menu-list li i{
+    float: right;
+}
+
+.offcanvas-header a{
+    text-decoration: unset;
+}
+
+/* supreme wireless immersion */
+
+.supreme-wireless-section{
+    background-image: url(images/razer-nari-hero-desktop-wireless-gaming-headset\ CL.jpg);
+    background-size: cover;
+}
+
+.supreme-wireless-description-container{
+    width: 51%;
+    padding: 150px 0 125px 0;
+}
+
+.description-title{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: var(--white);
+}
+
+.description,.features-subheadline,.section-divider,.thx-spatial-description,.card-subtitle,.info,.footer-divider{
+    color:var(--grey);
+}
+
+.thx-chroma img{
+    width: 100px;
+}
+
+.razer-nari-logo{
+    width: 250px;
+    position: absolute;
+    float: right;
+    top: 550px;
+    right: 360px;
+}
+
+/* complemented by comfort */
+
+.features-header{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.section-headline{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--green);
+}
+
+.features-section{
+    padding: 125px 0 100px 0;
+}
+
+.flex-container{
+    display: flex;
+    margin: 50px 0;
+    justify-content: center;
+}
+
+.feature-flex img{
+    width: 40px;
+}
+
+.feature-flex{
+    width: 315px;
+}
+
+.feature{
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.feature-description{
+    font-size: 13px;
+    color:var(--grey);
+    width: 90%;
+}
+
+/* product images */
+
+.swiper {
+    width: 100%;
+    height: 250px;
+}
+
+.swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    background: var(--black);
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-divider{
+    margin-bottom: 50px
+}
+
+.swiper-slide:hover .img-to-hover {
+    opacity: 0.2;
+}
+
+.swiper-slide:hover .view-btn {
+   display: block;
+   opacity: 1;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: var(--green) !important;
+    opacity: unset !important;
+}
+
+.swiper-pagination-bullet{
+    background: #5a5a5a!important;
+    opacity: unset !important;
+}
+
+.swiper-pagination{
+    position: unset !important;
+    margin-top: 20px;
+}
+
+.view-fullscreen{
+    margin-top: -135px;
+}
+
+.view-btn{
+    transition: .5s ease;
+    display: none;
+    color: var(--black);
+    font-size: 12px;
+    padding: 13px 40px;
+    border-radius: 40px;
+    background: var(--green);
+    font-weight: bold;
+    border: none;
+    margin: auto;
+    position: relative;
+    width: 80%;
+}
+
+.view-fullscreen a{
+    text-decoration: unset;
+}
+
+.view-fullscreen a:hover{
+    color: unset;
+}
+
+/* modal */
+
+.modal-body{
+    padding: unset !important;
+}
+
+.modal-dialog{
+    max-width: 1000px !important;
+}
+
+/* thx spatial audio */
+
+.thx-spatial-container{
+    width: 28%;
+    padding: 100px 0;
+}
+
+.thx-icon{
+    width: 150px;
+}
+
+.spatial-audio-section{
+    background-image: url(images/razer-nari-usp02-desktop-wireless-gaming-headset.jpg);
+    background-size: cover;
+}
+
+.img-container{
+    background-color: var(--black);
+}
+
+/* explore other products */
+
+.other-products-img{
+    max-width: 250px;
+}
+
+.other-products{
+    padding: 100px 0;
+}
+
+.other-products-row{
+    margin-top: 25px !important;
+}
+
+.card-description{
+    padding: 15px 15px;
+    border-bottom: 3px solid var(--green);
+    background-color: #161415;
+}
+
+.card-title{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.card-subtitle{
+    font-size: 12px;
+    width: 90%;
+}
+
+.learn-more-link{
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: unset;
+    color: var(--green);
+}
+
+.learn-more-link:hover{
+    color: var(--green);
+}
+
+/* contact form */
+
+.form-section{
+    background-color: var(--black);
+}
+
+.form-row{
+    padding: 100px 0;
+}
+
+.contact-input{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--white);
+    padding: 12px;
+    background-color: #fff0;
+    border: 1px solid white;
+    border-radius: 5px;  
+}
+
+input {
+    width: 100%;
+}
+
+.message-input{
+    height: 100px;
+}
+
+.action-btn{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--black);
+    margin-top: 15px;
+    padding: 15px 70px;
+    background: var(--green);
+    border-radius: 40px;
+    border: unset;
+}
+
+.info-container{
+    padding: 20px 0;
+}
+
+.info-header{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.info{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.info-details{
+    padding: 10px 0;
+}
+
+/* footer section */
+
+.razer-footer-icon{
+    width: 200px;
+}
+
+.footer-content{
+    padding: 40px 0;
+}
+
+.footer-list{
+    font-size: 13px;
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.footer-list li a{
+    font-weight: bold;
+    color:var(--grey);
+    text-decoration: none;
+    padding: 0 30px;
+}
+
+.footer-icon{
+    height: 15px;
+    padding: 0 10px;
+}
+
+.footer-divider{
+   margin: unset;
+}
+
+.footer-content .row .col-sm-8{
+    text-align: center;
+}
+
+.razer-footer-icon{
+    width: 150px;
+}
+
+.copyright{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color:var(--grey);
+}
+
+
+/* fade effect on scroll */
+.reveal{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 600px){
+    .container{
+        padding: 0 30px !important;
+    }
+
+    .footer-list{
+        display: inline;
+    }
+
+    .razer-nari-logo {
+        display: none;
+    }
+
+    .supreme-wireless-section{
+        background: url("images/banner.png");
+        background-position-y: bottom;
+        background-size: cover;
+    }
+
+    .supreme-wireless-description-container{
+        width: 100%;
+        padding: 25px 0 50px 0;
+    }
+
+    .description-title{
+        font-size: 35px;
+    }
+
+    .description{
+        color: white;
+        font-size: 15px;
+    }
+
+    .thx-chroma img{
+        width: 50px;
+    }
+
+    .feature-flex{
+        width: unset;
+    }
+
+    .feature-description{
+        width: 100%;
+    }
+
+    .features-section{
+        padding: 30px 0 30px 0;
+    }
+
+    .features-header{
+        width: 100%;
+    }
+
+    .features-subheadline{
+        font-size: 15px;
+    }
+
+    .flex-container{
+        display: block;
+        margin: 50px 0 -30px 0;
+    }
+
+    .section-divider{
+        display: none;
+    }
+
+    .section-headline{
+        margin-top: 50px;
+    }
+    .spatial-audio-section{
+        background-image: url(images/6.jpg);
+        background-size: cover;
+        background-position: right;
+    }
+
+    .thx-spatial-container{
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .thx-icon{
+        display: none;
+    }
+
+    .swiper-slide:hover .img-to-hover {
+        opacity: 1;
+    }
+
+    .swiper-slide:hover .view-btn {
+        display: none;
+    }
+
+    .thx-spatial-container .section-headline,.other-products .section-headline, .form-row .section-headline{
+        margin-top: 20px;
+    }
+
+    .other-products, .form-row{
+        padding: 25px 0;
+    }
+
+    .other-products-row .col-sm-3{
+        padding-bottom: 30px;
+    }
+
+    .name-input{
+        margin-bottom: 15px;
+    }
+
+    .action-btn{
+        display: block;
+        width: 100%;
+    }
+
+    .form-row .section-headline{
+        text-align: center;
+    }
+
+    .section-headline.info-headline{
+        margin-top: 50px;
+    }
+
+    .footer-content .row .col-sm-8{
+        text-align: unset;
+    }
+
+    .footer-list li{
+        padding: 5px 0;
+    }
+
+    .footer-list li a{
+        padding: unset;
+    }
+
+    .footer-content .row .col-sm-2{
+        padding-top: 10px;
+    }
+
+    .footer-icon{
+        padding: unset;
+        padding-right: 20px;
+    }
+
+    .hide-card{
+        display: none;
+    }
+
+    .action-btn.view-all-btn{
+        width: unset;
+        padding: 15px 50px;
+        margin: auto;
+    }
+
+    .copyright{
+        text-align: left;
+    }
+
+    .navbar-toggler-icon{
+        color:var(--grey);
+    }
+
+   
+
+}
+
+@media screen and (width:768px){
+    .container{
+        padding: 0 50px !important;
+    }
+
+    .supreme-wireless-section{
+        background-position-x: -2350px;
+    }
+
+    .supreme-wireless-description-container{
+        width: 60%;
+        padding: 50px 0 40px 0;
+    }
+
+    .thx-spatial-container{
+        width: 50%;
+    }
+    
+    .spatial-audio-section{
+        background-position: center;
+    }
+
+    .footer-list li a{
+        padding: 0 10px;
+    }
+
+    .footer-icon{
+        padding: 0 5px;
+    }
+}
+
+@media screen and (width: 1024px) {
+    .container{
+        padding: 0 60px !important;
+    }
+    .supreme-wireless-section, .spatial-audio-section{
+        background-position: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
