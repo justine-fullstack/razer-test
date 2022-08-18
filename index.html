@@ -6,516 +6,464 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- css links -->
-    <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- end of css links -->
 
     <title>Razer Nari</title>
 </head>
 <body>
-    <!-- nav for web -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark-grey">
-        <div class="container container-fluid header-container">
-          <a class="navbar-brand" href="#"><img class="razer-icon" src="images/wordmark.svg"></a>
-          <button class="btn d-lg-none d-md-block d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navMobMenu" aria-controls="navMobMenu">
-            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-          </button>
-          <div class="collapse navbar-collapse d-none d-md-none d-sm-block" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
-               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    PRODUCTS <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">LAPTOPS</a></li>
-                    <li><a class="dropdown-item" href="#">MOBILE</a></li>
-                    <li><a class="dropdown-item" href="#">MOUSES & MATS</a></li>
-                    <li><a class="dropdown-item" href="#">KEYBOARDS</a></li>
-                    <li class="dropdown dropend"><a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        HEADSETS & AUDIO <i class="fa-solid fa-chevron-right"></i></a>
-                        <ul class="submenu dropdown-menu" aria-labelledby="multilevelDropdown">
-                            <li><a class="dropdown-item" href="">WIRED</a></li>
-                            <li><a class="dropdown-item" href="">WIRELESS</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="dropdown-item" href="#">CONSOLE</a></li>
+<!-- nav for web -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark-grey">
+    <div class="container container-fluid header-container">
+      <a class="navbar-brand" href="#"><img class="razer-icon" src="images/wordmark.svg"></a>
+      <button class="btn d-lg-none d-md-block d-sm-none" data-bs-toggle="offcanvas" data-bs-target="#navMobMenu">
+        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse d-none d-md-none d-sm-block" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PRODUCTS <i class="fa-solid fa-chevron-down"></i>
+						</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">LAPTOPS</a></li>
+              <li><a class="dropdown-item" href="#">MOBILE</a></li>
+              <li><a class="dropdown-item" href="#">MOUSES & MATS</a></li>
+              <li><a class="dropdown-item" href="#">KEYBOARDS</a></li>
+              <li class="dropdown dropend"><a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                HEADSETS & AUDIO <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="submenu dropdown-menu">
+                  <li><a class="dropdown-item" href="">WIRED</a></li>
+                  <li><a class="dropdown-item" href="">WIRELESS</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">COMMUNITY</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT US</a>
-            </li>
-            
+              <li><a class="dropdown-item" href="#">CONSOLE</a></li>
             </ul>
-            <button class="buy-btn">BUY NOW</button>
-          </div>
-        </div>
-    </nav>
-    <!-- end of nav for web -->
-
-    <!-- nav for mob -->
-    <div class="offcanvas offcanvas-start mob-nav" tabindex="-1" id="navMobMenu" aria-labelledby="navMobMenuLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="navMobMenuLabel">MENU</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-        <div class="offcanvas-body">
-          <div class="mob-menu">
-            <ul class="mob-menu-list">
-                <li><a data-bs-toggle="offcanvas" href="#productsMobMenu" role="button" aria-controls="productsMobMenu">PRODUCTS<i class="fa-solid fa-chevron-right"></i></a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">COMMUNITY</a></li>
-                <li><a href="">CONTACT US</a></li>
-            </ul>
-            <button class="buy-btn">BUY NOW</button>
-          </div>
-        </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">COMMUNITY</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+        </ul>
+        <button class="buy-btn">BUY NOW</button>
+      </div>
     </div>
+  </nav>
 
-    <!-- products offcanvas -->
-    <div class="offcanvas offcanvas-start mob-nav" tabindex="-1" id="productsMobMenu" aria-labelledby="productsMobMenuTitle">
-        <div class="offcanvas-header products-mob-menu-header">
-          <a data-bs-toggle="offcanvas" href="#navMobMenu" role="button" aria-controls="navMobMenu">
-            <h5 class="offcanvas-title" id="productsMobMenuTitle"><i class="fa-solid fa-chevron-left"></i> PRODUCTS</h5>
-          </a>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-        <div class="offcanvas-body">
-          <div class="mob-menu">
-            <ul class="mob-menu-list">
-                <li><a href="">LAPTOPS</a></li>
-                <li><a href="">MOBILE</a></li>
-                <li><a href="">MOUSES & MATS</a></li>
-                <li><a href="">KEYBOARDS</a></li>
-                <li><a data-bs-toggle="offcanvas" href="#productsMobSubmenu" role="button" aria-controls="productsMobSubmenu">HEADSETS & AUDIO<i class="fa-solid fa-chevron-right"></i></a></li>
-                <li><a href="">CONSOLE</a></li>
-            </ul>
-          </div>
-        </div>
+  <!-- nav for mob -->
+  <div class="offcanvas offcanvas-start mob-nav" tabindex="-1" id="navMobMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="navMobMenuLabel">MENU</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
     </div>
-    <!-- end of product offcanvas -->
-
-    <!-- headsets & audio off canvas -->
-    <div class="offcanvas offcanvas-start mob-nav" tabindex="-1" id="productsMobSubmenu" aria-labelledby="productsMobMenuTitle">
-        <div class="offcanvas-header products-mob-menu-header">
-          
-          <a data-bs-toggle="offcanvas" href="#productsMobMenu" role="button" aria-controls="productsMobMenu">
-            <h5 class="offcanvas-title" id="productsMobSubmenuTitle"><i class="fa-solid fa-chevron-left"></i> HEADSETS & AUDIO</h5>
-          </a>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-        <div class="offcanvas-body">
-          <div class="mob-menu">
-            <ul class="mob-menu-list">
-                <li><a href="">WIRED</a></li>
-                <li><a href="">WIRELESS</a></li>
-            </ul>
-          </div>
-        </div>
+    <div class="offcanvas-body">
+      <ul class="mob-menu-list">
+        <li><a data-bs-toggle="offcanvas" href="#productsMobMenu" role="button" aria-controls="productsMobMenu">PRODUCTS<i class="fa-solid fa-chevron-right"></i></a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">COMMUNITY</a></li>
+        <li><a href="">CONTACT US</a></li>
+      </ul>
+      <button class="buy-btn">BUY NOW</button>
     </div>
-    <!-- end of headsets & audio offcanvas -->
+  </div>
 
-    <!-- end of nav for mob -->
-
-    <!-- first section -->
-    <section class="supreme-wireless-section">
-        <div class="container container-fluid">
-            <div class="supreme-wireless-description-container">
-                <p class="description-title">SUPREME WIRELESS IMMERSION</p>
-                <p class="description">When it comes to gaming immersion, sound plays a critical role. It engages your sense of hearing to determine the atmosphere and mood, creating
-                    a lifelike experience that lets you truly embody your game character. Standing by this philosophy, we've built a headset with THX Spatial Audio 
-                    to bring you 360° positional sound, giving you greater spatial awareness. We've also added ergonomic design features to make this one of the 
-                    most comfortable daily drivers for gaming. This is the Razer Nari.
-                </p>
-                <div class="thx-chroma">
-                    <img src="images/razer-nari-thx-logo.png">
-                    <img src="images/razer-nari-chroma-logo.png">
-                </div>
-                <img class="razer-nari-logo" src="images/razer-nari-logo.svg">
-            </div>
-            
-        </div>
-    </section>
-    <!-- end of first section -->
-
-    <!-- second section -->
-    <section class="features-section bg-dark-grey">
-        <div class="container container-fluid">
-            <div class="features-header">
-                <p class="section-headline">COMPLEMENTED BY COMFORT</p>
-                <p class="features-subheadline">The Razer Nari is designed so that its immersive technology is complemented by comfortable features, letting you escape into game worlds for hours 
-                    without strain.
-                </p>
-            </div>
-            <div class="flex-container">
-                <div class="feature-flex">
-                    <img src="images/razer-nari-Cooling-Gel-Infused-Cushions-icon.svg">
-                    <p class="feature mb-1 mt-1">COOLING GEL-INFUSED CUSHIONS</p>
-                    <p class="feature-description">Reduces heat build-up during intense gaming sessions</p>
-                </div>
-                <div class="feature-flex">  
-                    <img src="images/razer-nari-Auto-Adjusting-Headband-icon.svg">
-                    <p class="feature mb-1 mt-1">AUTO-ADJUSTING HEADBAND</p>
-                    <p class="feature-description">Maximum adjustability to fit seamlessly onto any head size</p>
-                </div>
-                <div class="feature-flex">
-                    <img src="images/razer-nari-Swiveling-Earcups-icon.svg">
-                    <p class="feature mb-1 mt-1">SWIVELING EARCUPS</p>
-                    <p class="feature-description">Adapting to the shape and position of your ears</p>
-                </div>
-            </div>
-            <div class="flex-container">
-                <div class="feature-flex">
-                    <img src="images/razer-nari-Game-Chat-Balance-icon.svg">
-                    <p class="feature mb-1 mt-1">GAME/CHAT BALANCE</p>
-                    <p class="feature-description">Fine-tune between game and chat volume for the perfect mix that lets you enjoy immersive sound without interrupting team communication.</p>
-                </div>
-                <div class="feature-flex">  
-                    <img src="images/razer-nari-Wireless-Audio-icon.svg">
-                    <p class="feature mb-1 mt-1">2.4GHZ WIRELESS AUDIO</p>
-                    <p class="feature-description">Get lag-free, high-fidelity gaming audio with a wireless range of up to 12 meters smoothly without disconnection.</p>
-                </div>
-                <div class="feature-flex">
-                    <img src="images/razer-nari-35-mm-Wired-Mode-icon.svg">
-                    <p class="feature mb-1 mt-1">WIRED MODE</p>
-                    <p class="feature-description">Get seamless cross-platform compatability via a 3.5mm audio jack in wired mode. Enjoy high quality stereo sound whether you're playing
-                        on PC.
-                    </p>
-                </div>
-            </div>
-            <hr class="section-divider">
-            <p class="section-headline text-center">PRODUCT IMAGES</p>
-            <div class="swiper product-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img class="img-to-hover" src="images/razer-nari-gallery-05-wireless-gaming-headset XS.jpg">
-                        <div class="view-fullscreen">
-                            <a class="view-btn" href="#viewImage1" data-bs-toggle="modal" data-bs-target="#viewImage1">VIEW FULLSCREEN</a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="img-to-hover" src="images/razer-nari-gallery-06-wireless-gaming-headset xs.jpg">
-                        <div class="view-fullscreen">
-                            <a href="#viewImage2" href="#viewImage2" class="view-btn" data-bs-toggle="modal" data-bs-target="#viewImage2">VIEW FULLSCREEN</a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="img-to-hover" src="images/razer-nari-gallery-07-wireless-gaming-headset xs.jpg">
-                        <div class="view-fullscreen">
-                            <a class="view-btn" href="#viewImage3" data-bs-toggle="modal" data-bs-target="#viewImage3">VIEW FULLSCREEN</a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="img-to-hover" src="images/razer-nari-gallery-08-wireless-gaming-headset xs.jpg">
-                        <div class="view-fullscreen">
-                            <a class="view-btn" href="#viewImage4" data-bs-toggle="modal" data-bs-target="#viewImage4">VIEW FULLSCREEN</a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="img-to-hover" src="images/razer-nari-gallery-05-wireless-gaming-headset XS.jpg">
-                        <div class="view-fullscreen">
-                            <a class="view-btn" href="#viewImage1" data-bs-toggle="modal" data-bs-target="#viewImage1">VIEW FULLSCREEN</a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="img-to-hover" src="images/razer-nari-gallery-06-wireless-gaming-headset xs.jpg">
-                        <div class="view-fullscreen">
-                            <a class="view-btn" href="#viewImage2" data-bs-toggle="modal" data-bs-target="#viewImage2">VIEW FULLSCREEN</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-    <!-- end of second section -->
-
-    <!-- third section -->
-    <section class="spatial-audio-section reveal">
-        <div class="container container-fluid">
-            <div class="thx-spatial-container">
-                <p class="section-headline">THX SPATIAL AUDIO</p>
-                <p class="thx-spatial-description">THX Spatial Audio goes beyond traditional surround sound by simulating sound in a 360° sphere around you. With the Nari Ultimate,
-                    you can now react to any in-game movement, even if its coming from above or beneath you, giving you heightened senses during your game. Unleash your predatory 
-                    instincts with sound as a weapon.
-                </p>
-                <img class="thx-icon" src="images/razer-nari-thx-logo.png">
-            </div>
-        </div>
-    </section>
-    <!-- end of third section -->
-
-    <!-- fourth section -->
-    <section class="bg-dark-grey">
-        <div class="container container-fluid">
-            <div class="other-products">
-                <p class="section-headline text-center">EXPLORE OTHER PRODUCTS</p>
-                <div class="row other-products-row">
-                    <div class="col-sm-3">
-                        <div class="product-card">
-                            <div class="img-container">
-                                <img class="other-products-img m-auto d-block img-fluid" src="images/Nari-Ultimate-Base.png">
-                            </div>
-                            <div class="card-description">
-                                <p class="card-title">RAZER NARI ULTIMATE</p>
-                                <p class="card-subtitle mb-3">Wireless Gaming Headset with Razer Hypersense</p>
-                                <a class="learn-more-link" href="">LEARN MORE</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="product-card">
-                            <div class="img-container">
-                                <img class="other-products-img m-auto d-block img-fluid" src="images/Nari-Ultimate-Base.png">
-                            </div>
-                            <div class="card-description">
-                                <p class="card-title">RAZER NARI</p>
-                                <p class="card-subtitle mb-3">Wireless Gaming Headset with Razer Hypersense</p>
-                                <a class="learn-more-link" href="">LEARN MORE</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 hide-card" id="hideCard">
-                        <div class="product-card">
-                            <div class="img-container">
-                                <img class="other-products-img m-auto d-block img-fluid" src="images/Nari-Ultimate-Base.png">
-                            </div>
-                            <div class="card-description">
-                                <p class="card-title">RAZER MAMBA WIRELESS</p>
-                                <p class="card-subtitle mb-3">Full Razer Chroma and Wireless Convenience</p>
-                                <a class="learn-more-link" href="">LEARN MORE</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 hide-card" id="hideCard2">
-                        <div class="product-card">
-                            <div class="img-container">
-                                <img class="other-products-img m-auto d-block img-fluid" src="images/Nari-Ultimate-Base.png">
-                            </div>
-                            <div class="card-description">
-                                <p class="card-title">RAZER BLACKWIDOW ELITE</p>
-                                <p class="card-subtitle mb-3">The Complete Mechanical Gaming Keyboard</p>
-                                <a class="learn-more-link" href="">LEARN MORE</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-block d-sm-none">
-                <button class="action-btn view-all-btn" id="viewBtn" onclick="viewAll()">VIEW ALL PRODUCTS</button>
-            </div>
-        </div>
-    </section>
-    <!-- end of fourth section -->
-
-    <!-- fifth section -->
-    <section class="form-section">
-        <div class="container container-fluid">
-            <div class="row form-row">
-                <div class="col-sm-5">
-                    <p class="section-headline">ASK A QUESTION</p>
-                    <!-- contact form -->
-                    <form>
-                        <div class="mb-3">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <input type="text" class="contact-input name-input" placeholder="Name" required>
-                                </div>
-                                <div class="col-sm-6">
-                                    <input type="number" class="contact-input" placeholder="Phone Number" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="contact-input" placeholder="Email Address" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="contact-input" placeholder="Permanent Address" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="contact-input message-input" placeholder="Message" required>
-                        </div>
-                        <button class="action-btn" type="submit">SEND</button>
-                    </form>
-                    <!-- end of contact form -->
-                </div>
-                <div class="col-sm-4"></div>
-                <div class="col-sm-3">
-                    <p class="section-headline info-headline">INFORMATION</p>
-                    <div class="info-container">
-                        <div class="">
-                            <p class="info-header">ADDRESS</p>
-                            <p class="info">123 East 123th St. <br> Floor 123 <br> New York, NY, 1 0003</p>
-                        </div>
-                        <div class="info-details">
-                            <p class="info-header">PHONE</p>
-                            <p class="info">+1 234 567-8910</p>
-                        </div>
-                        <div class="info-details">
-                            <p class="info-header">EMAIL</p>
-                            <p class="info">hello@fullstack.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of fifth section -->
-
-    <!-- footer section -->
-    <section class="footer-section bg-dark-grey">
-        <div class="container container-fluid footer-container">
-            <div class="footer-content">
-                <div class="row">
-                    <div class="col-sm-2">
-                        <img class="razer-footer-icon" src="images/wordmark.svg">
-                    </div>
-                    <div class="col-sm-8">
-                        <ul class="footer-list">
-                            <li><a href="">PRODUCTS</a></li>
-                            <li><a href="">ABOUT</a></li>
-                            <li><a href="">COMMUNITY</a></li>
-                            <li><a href="">CONTACT US</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2">  
-                        <a href=""><img class="footer-icon" src="images/twitter-logo-silhouette.svg"></a>
-                        <a href=""><img class="footer-icon" src="images/facebook-logo.svg"></a>
-                        <a href=""><img class="footer-icon" src="images/google-plus.svg"></a>
-                    </div>
-                </div>
-            </div>
-            <hr class="footer-divider">
-            <p class="mb-0 pt-3 pb-3 copyright d-none d-sm-block">COPYRIGHT 2019 FULLSTACKHQ INC. ALL RIGHTS RESERVED</p>
-            <p class="mb-0 pt-3 pb-3 copyright d-block d-sm-none">COPYRIGHT 2019 FULLSTACKHQ INC. <br> ALL RIGHTS RESERVED</p>
-        </div>
-    </section>
-    <!-- end of footer section -->
-
-    <!-- modal section -->
-    <div class="modal fade" id="viewImage1" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-                <img src="images/razer-nari-gallery-05-wireless-gaming-headset.jpg" class="img-fluid">
-            </div>
-          </div>
-        </div>
+  <!-- products offcanvas -->
+  <div class="offcanvas offcanvas-start mob-nav" tabindex="-1" id="productsMobMenu">
+    <div class="offcanvas-header">
+      <a data-bs-toggle="offcanvas" href="#navMobMenu" role="button" aria-controls="navMobMenu">
+        <h5 class="offcanvas-title" id="productsMobMenuTitle"><i class="fa-solid fa-chevron-left"></i> PRODUCTS </h5>
+      </a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
     </div>
-    <div class="modal fade" id="viewImage2" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-                <img src="images/razer-nari-gallery-06-wireless-gaming-headset.jpg" class="img-fluid">
-            </div>
-          </div>
-        </div>
+    <div class="offcanvas-body">
+      <ul class="mob-menu-list">
+        <li><a href="">LAPTOPS</a></li>
+        <li><a href="">MOBILE</a></li>
+        <li><a href="">MOUSES & MATS</a></li>
+        <li><a href="">KEYBOARDS</a></li>
+        <li><a data-bs-toggle="offcanvas" href="#productsMobSubmenu" role="button" aria-controls="productsMobSubmenu">HEADSETS & AUDIO<i class="fa-solid fa-chevron-right"></i></a></li>
+        <li><a href="">CONSOLE</a></li>
+      </ul>
     </div>
-    <div class="modal fade" id="viewImage3" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-                <img src="images/razer-nari-gallery-07-wireless-gaming-headset.jpg" class="img-fluid">
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="modal fade" id="viewImage4" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-                <img src="images/razer-nari-gallery-08-wireless-gaming-headset.jpg" class="img-fluid">
-            </div>
-          </div>
-        </div>
-    </div>
-    <!-- end of modal section -->
-
-    <!-- scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <!-- multilevel script -->
-    <script>
-       (function($bs) {
-            const CLASS_NAME = 'has-child-dropdown-show';
-            $bs.Dropdown.prototype.toggle = function(_orginal) {
-                return function() {
-                    document.querySelectorAll('.' + CLASS_NAME).forEach(function(e) {
-                        e.classList.remove(CLASS_NAME);
-                    });
-                    let dd = this._element.closest('.dropdown').parentNode.closest('.dropdown');
-                    for (; dd && dd !== document; dd = dd.parentNode.closest('.dropdown')) {
-                        dd.classList.add(CLASS_NAME);
-                    }
-                    return _orginal.call(this);
-                }
-            }($bs.Dropdown.prototype.toggle);
-
-            document.querySelectorAll('.dropdown').forEach(function(dd) {
-                dd.addEventListener('hide.bs.dropdown', function(e) {
-                    if (this.classList.contains(CLASS_NAME)) {
-                        this.classList.remove(CLASS_NAME);
-                        e.preventDefault();
-                    }
-                    e.stopPropagation();
-                });
-            });
-        })(bootstrap);
-    </script>
+  </div>
     
-    <!-- swiper script -->
-    <script>
-        var swiper = new Swiper(".product-swiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-            640: {
-                slidesPerView:4
-            }
-        }
-        });
-    </script>
+  <!-- headsets & audio offcanvas -->
+  <div class="offcanvas offcanvas-start mob-nav" tabindex="-1" id="productsMobSubmenu">
+    <div class="offcanvas-header">
+      <a data-bs-toggle="offcanvas" href="#productsMobMenu" role="button" aria-controls="productsMobMenu">
+        <h5 class="offcanvas-title" id="productsMobSubmenuTitle"><i class="fa-solid fa-chevron-left"></i> HEADSETS & AUDIO</h5>
+      </a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="mob-menu-list">
+        <li><a href="">WIRED</a></li>
+        <li><a href="">WIRELESS</a></li>
+    	</ul>
+    </div>
+	</div>
 
-    <!-- fade effect on scroll script -->
-    <script>
-        function reveal(){
-            var reveals = document.querySelectorAll(".reveal")
-            for (var i = 0; i < reveals.length; i++){
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 10;           
-            if (elementTop < windowHeight - elementVisible){
-                reveals[i].classList.add("active");
-            } else {
-                reveals[i].classList.remove("active");
-            }
-            }
-        }
-        window.addEventListener("scroll",reveal);
-    </script>
+  <!-- first section -->
+  <section class="supreme-wireless-section">
+    <div class="container container-fluid">
+      <div class="supreme-wireless-description-container">
+        <p class="description-title">SUPREME WIRELESS IMMERSION</p>
+        <p class="description">When it comes to gaming immersion, sound plays a critical role. It engages your sense of hearing to determine the atmosphere and mood, creating
+        a lifelike experience that lets you truly embody your game character. Standing by this philosophy, we've built a headset with THX Spatial Audio to bring you 360° positional sound, giving you greater spatial awareness. 
+				We've also added ergonomic design features to make this one of the most comfortable daily drivers for gaming. This is the Razer Nari.</p>
+        <div class="thx-chroma">
+          <img src="images/razer-nari-thx-logo.png">
+          <img src="images/razer-nari-chroma-logo.png">
+        </div>
+        <img class="razer-nari-logo" src="images/razer-nari-logo.svg">
+      </div>   
+    </div>
+  </section>
 
-    <!-- view all products script -->
-    <script>
-        function viewAll(){
-            document.getElementById("hideCard").style.display="block";
-            document.getElementById("hideCard2").style.display="block";
-            document.getElementById("viewBtn").style.display="none";
-        }
-    </script>
+  <!-- second section -->
+  <section class="features-section bg-dark-grey">
+    <div class="container container-fluid">
+      <div class="features-header">
+        <p class="section-headline">COMPLEMENTED BY COMFORT</p>
+        <p class="features-subheadline">The Razer Nari is designed so that its immersive technology is complemented by comfortable features, letting you escape into game worlds for hours without strain.</p>
+      </div>
+      <div class="flex-container">
+        <div class="feature-flex">
+          <img src="images/razer-nari-Cooling-Gel-Infused-Cushions-icon.svg">
+          <p class="feature mb-1 mt-1">COOLING GEL-INFUSED CUSHIONS</p>
+          <p class="feature-description">Reduces heat build-up during intense gaming sessions</p>
+        </div>
+        <div class="feature-flex">  
+          <img src="images/razer-nari-Auto-Adjusting-Headband-icon.svg">
+          <p class="feature mb-1 mt-1">AUTO-ADJUSTING HEADBAND</p>
+          <p class="feature-description">Maximum adjustability to fit seamlessly onto any head size</p>
+        </div>
+        <div class="feature-flex">
+          <img src="images/razer-nari-Swiveling-Earcups-icon.svg">
+          <p class="feature mb-1 mt-1">SWIVELING EARCUPS</p>
+          <p class="feature-description">Adapting to the shape and position of your ears</p>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="feature-flex">
+          <img src="images/razer-nari-Game-Chat-Balance-icon.svg">
+          <p class="feature mb-1 mt-1">GAME/CHAT BALANCE</p>
+          <p class="feature-description">Fine-tune between game and chat volume for the perfect mix that lets you enjoy immersive sound without interrupting team communication.</p>
+        </div>
+        <div class="feature-flex">  
+          <img src="images/razer-nari-Wireless-Audio-icon.svg">
+          <p class="feature mb-1 mt-1">2.4GHZ WIRELESS AUDIO</p>
+          <p class="feature-description">Get lag-free, high-fidelity gaming audio with a wireless range of up to 12 meters smoothly without disconnection.</p>
+        </div>
+        <div class="feature-flex">
+          <img src="images/razer-nari-35-mm-Wired-Mode-icon.svg">
+          <p class="feature mb-1 mt-1">WIRED MODE</p>
+          <p class="feature-description">Get seamless cross-platform compatability via a 3.5mm audio jack in wired mode. Enjoy high quality stereo sound whether you're playing on PC.</p>
+        </div>
+    </div>
+    <hr class="section-divider">
+    <p class="section-headline text-center">PRODUCT IMAGES</p>
+    <div class="swiper product-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="img-to-hover" src="images/razer-nari-gallery-05-wireless-gaming-headset XS.jpg">
+          <div class="view-fullscreen">
+            <a class="view-btn" href="#viewImage1" data-bs-toggle="modal" data-bs-target="#viewImage1">VIEW FULLSCREEN</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img class="img-to-hover" src="images/razer-nari-gallery-06-wireless-gaming-headset xs.jpg">
+          <div class="view-fullscreen">
+            <a href="#viewImage2" href="#viewImage2" class="view-btn" data-bs-toggle="modal" data-bs-target="#viewImage2">VIEW FULLSCREEN</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img class="img-to-hover" src="images/razer-nari-gallery-07-wireless-gaming-headset xs.jpg">
+          <div class="view-fullscreen">
+            <a class="view-btn" href="#viewImage3" data-bs-toggle="modal" data-bs-target="#viewImage3">VIEW FULLSCREEN</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img class="img-to-hover" src="images/razer-nari-gallery-08-wireless-gaming-headset xs.jpg">
+          <div class="view-fullscreen">
+            <a class="view-btn" href="#viewImage4" data-bs-toggle="modal" data-bs-target="#viewImage4">VIEW FULLSCREEN</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img class="img-to-hover" src="images/razer-nari-gallery-05-wireless-gaming-headset XS.jpg">
+          <div class="view-fullscreen">
+            <a class="view-btn" href="#viewImage1" data-bs-toggle="modal" data-bs-target="#viewImage1">VIEW FULLSCREEN</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img class="img-to-hover" src="images/razer-nari-gallery-06-wireless-gaming-headset xs.jpg">
+          <div class="view-fullscreen">
+            <a class="view-btn" href="#viewImage2" data-bs-toggle="modal" data-bs-target="#viewImage2">VIEW FULLSCREEN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!-- third section -->
+  <section class="spatial-audio-section reveal">
+    <div class="container container-fluid">
+      <div class="thx-spatial-container">
+        <p class="section-headline">THX SPATIAL AUDIO</p>
+        <p class="thx-spatial-description">THX Spatial Audio goes beyond traditional surround sound by simulating sound in a 360° sphere around you. With the Nari Ultimate,
+        you can now react to any in-game movement, even if its coming from above or beneath you, giving you heightened senses during your game. Unleash your predatory 
+				instincts with sound as a weapon.</p>
+        <img class="thx-icon" src="images/razer-nari-thx-logo.png">
+      </div>
+    </div>
+  </section>
+
+  <!-- fourth section -->
+  <section class="bg-dark-grey">
+    <div class="container container-fluid">
+      <div class="other-products">
+        <p class="section-headline text-center">EXPLORE OTHER PRODUCTS</p>
+        <div class="row other-products-row">
+          <div class="col-sm-3">
+            <div class="img-container">
+              <img class="other-products-img m-auto d-block img-fluid" src="images/Nari-Ultimate-Base.png">
+            </div>
+            <div class="card-description">
+              <p class="card-title">RAZER NARI ULTIMATE</p>
+              <p class="card-subtitle mb-3">Wireless Gaming Headset with Razer Hypersense</p>
+              <a class="learn-more-link" href="">LEARN MORE</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="img-container">
+              <img class="other-products-img m-auto d-block img-fluid" src="images/Nari-Ultimate-Base.png">
+            </div>
+            <div class="card-description">
+              <p class="card-title">RAZER NARI</p>
+              <p class="card-subtitle mb-3">Wireless Gaming Headset with Razer Hypersense</p>
+              <a class="learn-more-link" href="">LEARN MORE</a>
+            </div>
+          </div>
+          <div class="col-sm-3 hide-card" id="hideCard">
+            <div class="img-container">
+              <img class="other-products-img m-auto d-block img-fluid" src="images/Nari-Ultimate-Base.png">
+            </div>
+            <div class="card-description">
+              <p class="card-title">RAZER MAMBA WIRELESS</p>
+              <p class="card-subtitle mb-3">Full Razer Chroma and Wireless Convenience</p>
+              <a class="learn-more-link" href="">LEARN MORE</a>
+            </div>
+          </div>
+          <div class="col-sm-3 hide-card" id="hideCard2">
+            <div class="img-container">
+              <img class="other-products-img m-auto d-block img-fluid" src="images/Nari-Ultimate-Base.png">
+            </div>
+            <div class="card-description">
+              <p class="card-title">RAZER BLACKWIDOW ELITE</p>
+              <p class="card-subtitle mb-3">The Complete Mechanical Gaming Keyboard</p>
+              <a class="learn-more-link" href="">LEARN MORE</a>
+            </div>
+        	</div>
+      	</div>
+    	</div>
+    	<div class="d-block d-sm-none">
+      	<button class="action-btn view-all-btn" id="viewBtn" onclick="viewAll()">VIEW ALL PRODUCTS</button>
+   		</div>
+  	</div>
+  </section>
+
+  <!-- fifth section -->
+  <section class="form-section">
+    <div class="container container-fluid">
+      <div class="row form-row">
+        <div class="col-sm-5">
+        	<p class="section-headline">ASK A QUESTION</p>
+          <!-- contact form -->
+          <form>
+            <div class="mb-3">
+              <div class="row">
+                <div class="col-sm-6"><input type="text" class="contact-input name-input" placeholder="Name" required></div>
+                <div class="col-sm-6"><input type="number" class="contact-input" placeholder="Phone Number" required></div>
+              </div>
+            </div>
+            <div class="mb-3"><input type="email" class="contact-input" placeholder="Email Address" required></div>
+            <div class="mb-3"><input type="text" class="contact-input" placeholder="Permanent Address" required></div>
+            <div class="mb-3"><input type="text" class="contact-input message-input" placeholder="Message" required></div>
+            <button class="action-btn" type="submit">SEND</button>
+          </form>
+          <!-- end of contact form -->
+        </div>
+      	<div class="col-sm-4"></div>
+        <div class="col-sm-3">
+          <p class="section-headline info-headline">INFORMATION</p>
+          <div class="info-container">
+            <div class="info-details">
+              <p class="info-header">ADDRESS</p>
+              <p class="info">123 East 123th St. <br> Floor 123 <br> New York, NY, 1 0003</p>
+            </div>
+            <div class="info-details">
+            	<p class="info-header">PHONE</p>
+              <p class="info">+1 234 567-8910</p>
+            </div>
+            <div class="info-details">
+            	<p class="info-header">EMAIL</p>
+              <p class="info">hello@fullstack.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <section class="footer-section bg-dark-grey">
+    <div class="container container-fluid footer-container">
+      <div class="footer-content">
+        <div class="row">
+          <div class="col-sm-2">
+            <img class="razer-footer-icon" src="images/wordmark.svg">
+          </div>
+          <div class="col-sm-8">
+            <ul class="footer-list">
+              <li><a href="">PRODUCTS</a></li>
+              <li><a href="">ABOUT</a></li>
+              <li><a href="">COMMUNITY</a></li>
+              <li><a href="">CONTACT US</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2">  
+            <a href=""><img class="footer-icon" src="images/twitter-logo-silhouette.svg"></a>
+            <a href=""><img class="footer-icon" src="images/facebook-logo.svg"></a>
+            <a href=""><img class="footer-icon" src="images/google-plus.svg"></a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <p class="mb-0 pt-3 pb-3 copyright d-none d-sm-block">COPYRIGHT 2019 FULLSTACKHQ INC. ALL RIGHTS RESERVED</p>
+      <p class="mb-0 pt-3 pb-3 copyright d-block d-sm-none">COPYRIGHT 2019 FULLSTACKHQ INC. <br> ALL RIGHTS RESERVED</p>
+    </div>
+  </section>
+
+  <!-- modal section -->
+  <div class="modal fade" id="viewImage1" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="images/razer-nari-gallery-05-wireless-gaming-headset.jpg" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="viewImage2" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="images/razer-nari-gallery-06-wireless-gaming-headset.jpg" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="viewImage3" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="images/razer-nari-gallery-07-wireless-gaming-headset.jpg" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="viewImage4" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="images/razer-nari-gallery-08-wireless-gaming-headset.jpg" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<!-- multilevel script -->
+	<script>
+		(function($bs) {
+			const CLASS_NAME = 'has-child-dropdown-show';
+			$bs.Dropdown.prototype.toggle = function(_orginal) {
+				return function() {
+					document.querySelectorAll('.' + CLASS_NAME).forEach(function(e) {
+						e.classList.remove(CLASS_NAME);
+					});
+					let dd = this._element.closest('.dropdown').parentNode.closest('.dropdown');
+					for (; dd && dd !== document; dd = dd.parentNode.closest('.dropdown')) {
+						dd.classList.add(CLASS_NAME);
+					}
+					return _orginal.call(this);
+				}
+			}($bs.Dropdown.prototype.toggle);
+
+			document.querySelectorAll('.dropdown').forEach(function(dd) {
+				dd.addEventListener('hide.bs.dropdown', function(e) {
+					if (this.classList.contains(CLASS_NAME)) {
+						this.classList.remove(CLASS_NAME);
+							e.preventDefault();
+					}
+					e.stopPropagation();
+				});
+			});
+		})(bootstrap);
+  </script>
+
+	<!-- swiper script -->
+	<script>
+		var swiper = new Swiper(".product-swiper", {
+		slidesPerView: 1,
+		spaceBetween: 30,
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+		breakpoints: {
+			640: {
+				slidesPerView:4
+			}
+		}
+	});
+	</script>
+
+	<!-- fade effect on scroll script -->
+  <script>
+    function reveal(){
+      var reveals = document.querySelectorAll(".reveal")
+      for (var i = 0; i < reveals.length; i++){
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 10;           
+      if (elementTop < windowHeight - elementVisible){
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+      }
+    }
+    window.addEventListener("scroll",reveal);
+	</script>
+
+	<!-- view all products script -->
+	<script>
+		function viewAll(){
+			document.getElementById("hideCard").style.display="block";
+			document.getElementById("hideCard2").style.display="block";
+			document.getElementById("viewBtn").style.display="none";
+		}
+	</script>
+
 </body>
 </html>
