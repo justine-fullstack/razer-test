@@ -1,6 +1,8 @@
-* { font-family: 'Montserrat'; }
+* {
+  font-family: "Montserrat";
+}
 
-:root{
+:root {
   --green: #00ff01;
   --grey: #988c8c;
   --dark-grey: #0f0f0f;
@@ -8,10 +10,12 @@
   --white: #fff;
 }
 
-.container { max-width: 1200px !important; }
+.container {
+  max-width: 1200px !important;
+}
 
 /* header */
-.nav-item a{
+.nav-item a {
   padding: 0 30px !important;
   font-size: 12px;
   font-weight: bold;
@@ -19,30 +23,40 @@
   text-decoration: none;
 }
 
-.nav-item a:focus, 
-.nav-item a:hover, 
-.mob-menu-list a:hover, 
-.mob-menu-list a:focus{
+.nav-item a:focus,
+.nav-item a:hover,
+.mob-menu-list a:hover,
+.mob-menu-list a:focus {
   color: var(--green);
   background: unset;
 }
 
-.dropdown-menu li { padding: 10px 0; }
-
-.dropdown-menu.show { top: 40px !important; }
-
-.dropdown-menu.show, 
-a.dropdown-item:hover {
-  background: var(--black) ;
+.dropdown-menu li {
+  padding: 10px 0;
 }
 
-.submenu.dropdown-menu.show { margin-top: -49px !important; }
+.dropdown-menu.show {
+  top: 40px !important;
+}
 
-.razer-icon{width: 100px;}
+.dropdown-menu.show,
+a.dropdown-item:hover {
+  background: var(--black);
+}
 
-.bg-dark-grey { background-color: var(--dark-grey); }
+.submenu.dropdown-menu.show {
+  margin-top: -49px !important;
+}
 
-.buy-btn{
+.razer-icon {
+  width: 100px;
+}
+
+.bg-dark-grey {
+  background-color: var(--dark-grey);
+}
+
+.buy-btn {
   padding: 15px 45px;
   font-size: 12px;
   font-weight: bold;
@@ -52,54 +66,64 @@ a.dropdown-item:hover {
   border-radius: 25px;
 }
 
-.dropdown-toggle::after { display: none !important; }
+.dropdown-toggle::after {
+  display: none !important;
+}
 
 /* mob menu */
-.mob-menu-list{
-	padding-left:unset;
+.mob-menu-list {
+  padding-left: unset;
   list-style-type: none;
 }
 
-.mob-menu .buy-btn{
+.mob-menu .buy-btn {
   margin: auto;
   display: block;
   width: 100%;
 }
 
-.mob-menu-list li a{
+.mob-menu-list li a {
   font-size: 18px;
   font-weight: 500;
   color: var(--grey);
   text-decoration: none;
 }
 
-.mob-menu-list li { margin-bottom: 30px; }
+.mob-menu-list li {
+  margin-bottom: 30px;
+}
 
-.offcanvas { background-color: var(--black) !important; }
+.offcanvas {
+  background-color: var(--black) !important;
+}
 
-.offcanvas-title, 
-.offcanvas-header .btn-close{
-	font-weight: bold;
+.offcanvas-title,
+.offcanvas-header .btn-close {
+  font-weight: bold;
   color: var(--grey) !important;
 }
 
-.mob-menu-list li i { float: right; }
+.mob-menu-list li i {
+  float: right;
+}
 
-.offcanvas-header a { text-decoration: unset; }
+.offcanvas-header a {
+  text-decoration: unset;
+}
 
 /* supreme wireless immersion */
 
-.supreme-wireless-section{
+.supreme-wireless-section {
   background-image: url(images/razer-nari-hero-desktop-wireless-gaming-headset\ CL.jpg);
   background-size: cover;
 }
 
-.supreme-wireless-description-container{
-	padding: 150px 0 125px 0;
+.supreme-wireless-description-container {
+  padding: 150px 0 125px 0;
   width: 51%;
 }
 
-.description-title{
+.description-title {
   font-size: 40px;
   font-weight: bold;
   color: var(--white);
@@ -112,45 +136,53 @@ a.dropdown-item:hover {
 .thx-spatial-description,
 .card-subtitle,
 .info,
-.footer-divider{
-  color:var(--grey);
+.footer-divider {
+  color: var(--grey);
 }
 
-.thx-chroma img { width: 100px; }
+.thx-chroma img {
+  width: 100px;
+}
 
-.razer-nari-logo{
+.razer-nari-logo {
   position: absolute;
   top: 550px;
   right: 360px;
   float: right;
-  width: 250px;  
+  width: 250px;
 }
 
 /* complemented by comfort */
 
-.features-header{
-	margin: auto;
-	width: 60%;
+.features-header {
+  margin: auto;
+  width: 60%;
   text-align: center;
 }
 
-.section-headline{
+.section-headline {
   font-size: 20px;
   font-weight: bold;
   color: var(--green);
 }
 
-.features-section { padding: 125px 0 100px 0; }
+.features-section {
+  padding: 125px 0 100px 0;
+}
 
-.flex-container{
-	margin: 50px 0;
+.flex-container {
+  margin: 50px 0;
   display: flex;
   justify-content: center;
 }
 
-.feature-flex img { width: 40px; }
+.feature-flex img {
+  width: 40px;
+}
 
-.feature-flex { width: 315px; }
+.feature-flex {
+  width: 315px;
+}
 
 .feature {
   font-size: 15px;
@@ -158,10 +190,10 @@ a.dropdown-item:hover {
   color: var(--white);
 }
 
-.feature-description{
-	width: 90%;
+.feature-description {
+  width: 90%;
   font-size: 13px;
-  color:var(--grey);
+  color: var(--grey);
 }
 
 /* product images */
@@ -172,7 +204,7 @@ a.dropdown-item:hover {
 }
 
 .swiper-slide {
-	font-size: 18px;
+  font-size: 18px;
   text-align: center;
   background: var(--black);
 }
@@ -184,358 +216,460 @@ a.dropdown-item:hover {
   object-fit: cover;
 }
 
-.section-divider { margin-bottom: 50px }
-
-.swiper-slide:hover .img-to-hover { opacity: 0.2; }
-
-.swiper-slide:hover .view-btn {
-	display: block;
- 	opacity: 1;
+.section-divider {
+  margin-bottom: 50px;
 }
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active{
+.swiper-slide:hover .img-to-hover {
+  opacity: 0.2;
+}
+
+.swiper-slide:hover .view-btn {
+  display: block;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: var(--green) !important;
   opacity: unset !important;
 }
 
-.swiper-pagination-bullet{
-  background: #5a5a5a!important;
+.swiper-pagination-bullet {
+  background: #5a5a5a !important;
   opacity: unset !important;
 }
 
-.swiper-pagination{
+.swiper-pagination {
   position: unset !important;
   margin-top: 20px;
 }
 
-.view-fullscreen { margin-top: -135px; }
+.view-fullscreen {
+  margin-top: -135px;
+}
 
-.view-btn{
-	position: relative;
-	margin: auto;
-	padding: 13px 40px;
-	display: none;
-	width: 80%;
-	font-size: 12px;
-	font-weight: bold;
-	color: var(--black);
-	background: var(--green);
-  transition: .5s ease;
+.view-btn {
+  position: relative;
+  margin: auto;
+  padding: 13px 40px;
+  display: none;
+  width: 80%;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--black);
+  background: var(--green);
+  transition: 0.5s ease;
   border-radius: 40px;
   border: none;
 }
 
-.view-fullscreen a { text-decoration: unset; }
+.view-fullscreen a {
+  text-decoration: unset;
+}
 
-.view-fullscreen a:hover { color: unset; }
+.view-fullscreen a:hover {
+  color: unset;
+}
 
 /* modal */
 
-.modal-body { padding: unset !important; }
+.modal-body {
+  padding: unset !important;
+}
 
-.modal-dialog { max-width: 1000px !important; }
+.modal-dialog {
+  max-width: 1000px !important;
+}
 
 /* thx spatial audio */
 
-.thx-spatial-container{
+.thx-spatial-container {
   width: 28%;
   padding: 100px 0;
 }
 
-.thx-icon { width: 150px; }
+.thx-icon {
+  width: 150px;
+}
 
-.spatial-audio-section{
+.spatial-audio-section {
   background-image: url(images/razer-nari-usp02-desktop-wireless-gaming-headset.jpg);
   background-size: cover;
 }
 
-.img-container { background-color: var(--black); }
+.img-container {
+  background-color: var(--black);
+}
 
 /* explore other products */
 
-.other-products-img { max-width: 250px; }
-
-.other-products { padding: 100px 0; }
-
-.other-products-row { margin-top: 25px !important; }
-
-.card-description{
-  padding: 15px 15px;
-  background-color: #161415;
-	border-bottom: 3px solid var(--green);
+.other-products-img {
+  max-width: 250px;
 }
 
-.card-title{
+.other-products {
+  padding: 100px 0;
+}
+
+.other-products-row {
+  margin-top: 25px !important;
+}
+
+.card-description {
+  padding: 15px 15px;
+  background-color: #161415;
+  border-bottom: 3px solid var(--green);
+}
+
+.card-title {
   font-size: 15px;
   font-weight: bold;
   color: white;
   letter-spacing: 1px;
 }
 
-.card-subtitle{
-	width: 90%;
+.card-subtitle {
+  width: 90%;
   font-size: 12px;
 }
 
-.learn-more-link{
+.learn-more-link {
   font-size: 13px;
   font-weight: 500;
   color: var(--green);
-	text-decoration: unset;
+  text-decoration: unset;
 }
 
-.learn-more-link:hover { color: var(--green); }
+.learn-more-link:hover {
+  color: var(--green);
+}
 
 /* contact form */
 
-.form-section { background-color: var(--black); }
+.form-section {
+  background-color: var(--black);
+}
 
-.form-row { padding: 100px 0; }
+.form-row {
+  padding: 100px 0;
+}
 
-.contact-input{
-	padding: 12px;
+.contact-input {
+  padding: 12px;
   font-size: 12px;
   font-weight: bold;
   color: var(--white);
   background-color: #fff0;
   border: 1px solid white;
-  border-radius: 5px;  
+  border-radius: 5px;
 }
 
-input { width: 100%; }
+input {
+  width: 100%;
+}
 
-.message-input { height: 100px; }
+.message-input {
+  height: 100px;
+}
 
 .action-btn {
-	margin-top: 15px;
-	padding: 15px 70px;
+  margin-top: 15px;
+  padding: 15px 70px;
   font-size: 12px;
   font-weight: bold;
   color: var(--black);
   background: var(--green);
-	border: unset;
+  border: unset;
   border-radius: 40px;
 }
 
-.info-container { padding: 20px 0; }
+.info-container {
+  padding: 20px 0;
+}
 
-.info-header{
+.info-header {
   font-size: 14px;
   font-weight: bold;
   color: white;
 }
 
-.info{
+.info {
   font-size: 13px;
   font-weight: bold;
 }
 
-.info-details { padding: 10px 0; }
+.info-details {
+  padding: 10px 0;
+}
 
 /* footer section */
 
-.razer-footer-icon { width: 200px; }
+.razer-footer-icon {
+  width: 200px;
+}
 
-.footer-content { padding: 40px 0; }
+.footer-content {
+  padding: 40px 0;
+}
 
-.footer-list{
-	display: inline-flex;
+.footer-list {
+  display: inline-flex;
   font-size: 13px;
   list-style-type: none;
 }
 
-.footer-list li a{
-	padding: 0 30px;
+.footer-list li a {
+  padding: 0 30px;
   font-weight: bold;
-  color:var(--grey);
+  color: var(--grey);
   text-decoration: none;
 }
 
-.footer-icon{
-	padding: 0 10px;
+.footer-icon {
+  padding: 0 10px;
   height: 15px;
 }
 
-.footer-divider { margin: unset; }
+.footer-divider {
+  margin: unset;
+}
 
-.footer-content .row .col-sm-8 { text-align: center; }
+.footer-content .row .col-sm-8 {
+  text-align: center;
+}
 
-.razer-footer-icon { width: 150px; }
+.razer-footer-icon {
+  width: 150px;
+}
 
-.copyright{
+.copyright {
   font-size: 12px;
   font-weight: 500;
   text-align: center;
-  color:var(--grey);
+  color: var(--grey);
 }
 
-
 /* fade effect on scroll */
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(50px);
   opacity: 0;
   transition: 2s all ease;
 }
 
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 30px !important;
+  }
 
-@media screen and (max-width: 600px){
-  .container { padding: 0 30px !important; }
+  .footer-list {
+    display: inline;
+  }
 
-  .footer-list { display: inline; }
+  .razer-nari-logo {
+    display: none;
+  }
 
-  .razer-nari-logo { display: none; }
-
-  .supreme-wireless-section{
+  .supreme-wireless-section {
     background: url("images/banner.png");
     background-position-y: bottom;
     background-size: cover;
   }
 
-  .supreme-wireless-description-container{
-		padding: 25px 0 50px 0;
+  .supreme-wireless-description-container {
+    padding: 25px 0 50px 0;
     width: 100%;
   }
 
-  .description-title { font-size: 35px; }
+  .description-title {
+    font-size: 35px;
+  }
 
-  .description{
-		font-size: 15px;
+  .description {
+    font-size: 15px;
     color: white;
   }
 
-  .thx-chroma img { width: 50px; }
+  .thx-chroma img {
+    width: 50px;
+  }
 
-  .feature-flex { width: unset; }
+  .feature-flex {
+    width: unset;
+  }
 
-  .feature-description { width: 100%; }
+  .feature-description {
+    width: 100%;
+  }
 
-  .features-section { padding: 30px 0 30px 0; }
+  .features-section {
+    padding: 30px 0 30px 0;
+  }
 
-  .features-header { width: 100%; }
+  .features-header {
+    width: 100%;
+  }
 
-  .features-subheadline { font-size: 15px; }
+  .features-subheadline {
+    font-size: 15px;
+  }
 
-  .flex-container{
+  .flex-container {
     display: block;
     margin: 50px 0 -30px 0;
   }
 
-  .section-divider { display: none; }
+  .section-divider {
+    display: none;
+  }
 
-  .section-headline { margin-top: 50px; }
+  .section-headline {
+    margin-top: 50px;
+  }
 
-  .spatial-audio-section{
+  .spatial-audio-section {
     background-image: url(images/6.jpg);
     background-size: cover;
     background-position: right;
   }
 
-	.thx-spatial-container{
-		padding: 50px 0;
+  .thx-spatial-container {
+    padding: 50px 0;
     width: 100%;
   }
 
-  .thx-icon { display: none; }
+  .thx-icon {
+    display: none;
+  }
 
-  .swiper-slide:hover .img-to-hover { opacity: 1; }
+  .swiper-slide:hover .img-to-hover {
+    opacity: 1;
+  }
 
-  .swiper-slide:hover .view-btn { display: none; }
+  .swiper-slide:hover .view-btn {
+    display: none;
+  }
 
   .thx-spatial-container .section-headline,
-  .other-products .section-headline, 
-  .form-row .section-headline{
+  .other-products .section-headline,
+  .form-row .section-headline {
     margin-top: 20px;
   }
 
-  .other-products, 
-  .form-row{
-  	padding: 25px 0;
+  .other-products,
+  .form-row {
+    padding: 25px 0;
   }
 
-  .other-products-row .col-sm-3 { padding-bottom: 30px; }
+  .other-products-row .col-sm-3 {
+    padding-bottom: 30px;
+  }
 
-  .name-input { margin-bottom: 15px; }
+  .name-input {
+    margin-bottom: 15px;
+  }
 
   .action-btn {
     display: block;
     width: 100%;
   }
 
-  .form-row .section-headline { text-align: center; }
+  .form-row .section-headline {
+    text-align: center;
+  }
 
-  .section-headline.info-headline { margin-top: 50px; }
+  .section-headline.info-headline {
+    margin-top: 50px;
+  }
 
-  .footer-content .row .col-sm-8 { text-align: unset; }
+  .footer-content .row .col-sm-8 {
+    text-align: unset;
+  }
 
-  .footer-list li { padding: 5px 0; }
+  .footer-list li {
+    padding: 5px 0;
+  }
 
-  .footer-list li a { padding: unset; }
+  .footer-list li a {
+    padding: unset;
+  }
 
-  .footer-content .row .col-sm-2 { padding-top: 10px; }
+  .footer-content .row .col-sm-2 {
+    padding-top: 10px;
+  }
 
   .footer-icon {
     padding: unset;
     padding-right: 20px;
   }
 
-  .hide-card { display: none; }
+  .hide-card {
+    display: none;
+  }
 
-  .action-btn.view-all-btn{
+  .action-btn.view-all-btn {
     margin: auto;
     padding: 15px 50px;
-		width: unset;
+    width: unset;
   }
 
-  .copyright { text-align: left; }
+  .copyright {
+    text-align: left;
+  }
 
-  .navbar-toggler-icon { color:var(--grey); }
+  .navbar-toggler-icon {
+    color: var(--grey);
+  }
 }
 
-@media screen and (width:768px){
-  .container { padding: 0 50px !important; }
-
-  .supreme-wireless-section { background-position-x: -2350px; }
-
-  .supreme-wireless-description-container{
-    padding: 50px 0 40px 0;
-		width: 60%;
+@media screen and (width: 768px) {
+  .container {
+    padding: 0 50px !important;
   }
 
-  .thx-spatial-container { width: 50%; }
-    
-  .spatial-audio-section { background-position: center; }
+  .supreme-wireless-section {
+    background-position-x: -2350px;
+  }
 
-	.footer-list li a { padding: 0 10px; }
+  .supreme-wireless-description-container {
+    padding: 50px 0 40px 0;
+    width: 60%;
+  }
 
-  .footer-icon { padding: 0 5px; }
+  .thx-spatial-container {
+    width: 50%;
+  }
 
-  .view-btn{
-		padding: 13px 0;
+  .spatial-audio-section {
+    background-position: center;
+  }
+
+  .footer-list li a {
+    padding: 0 10px;
+  }
+
+  .footer-icon {
+    padding: 0 5px;
+  }
+
+  .view-btn {
+    padding: 13px 0;
     width: 100%;
   }
 }
 
 @media screen and (width: 1024px) {
-  .container { padding: 0 60px !important; }
+  .container {
+    padding: 0 60px !important;
+  }
 
-  .supreme-wireless-section, 
-  .spatial-audio-section{
+  .supreme-wireless-section,
+  .spatial-audio-section {
     background-position: center;
   }
 }
-
-
-
-
-
-
-
-
-
-
